@@ -6,4 +6,18 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
+
+    a, span {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    h2 {
+        font-family: 'Baloo 2', sans-serif;
+        font-weight: 800;
+        font-size: 48px;
+        padding-bottom: 1rem;
+    }
+
 `

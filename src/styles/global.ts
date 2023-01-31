@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     a, span {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     h2 {

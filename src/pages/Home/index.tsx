@@ -1,7 +1,8 @@
-import { AdvantagesCoffeeDeliveryContainer, BrandingCoffeeContainer, BrandingCoffeeContainerBackground, BrandingCoffeeContainterText } from "./styles";
+import { AdvantagesCoffeeDeliveryContainer, BrandingCoffeeContainer, BrandingCoffeeContainerBackground, BrandingCoffeeContainterText, ItemCoffee, ItemPackage, ItemShoppingCart, ItemTimer } from "./styles";
 
 import brandingCoffee from '../../assets/coffee-branding.svg'
 import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
+
 
 export function Home() {
     return (
@@ -13,20 +14,39 @@ export function Home() {
                         <span>Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora.</span>
                     </div> 
                     <AdvantagesCoffeeDeliveryContainer>
-                        
-                            <ShoppingCart size={24}/>
-                        
-                            <Package size={24}/>
-                        
-                         
-                       
-                            <Timer size={24}/>
-                      
-                        
-                       
-                            <Coffee size={24}/>
-                        
-                        
+                        <ItemShoppingCart>
+                            <div>
+                                <ShoppingCart size={24} color="white"/>
+                            </div>
+                            <span>
+                                Compra simples e segura.
+                            </span>
+                        </ItemShoppingCart>
+                        <ItemPackage>
+                            <div>
+                                <Package size={24} color="white"/>
+                            </div>
+                            <span>
+                                Embalagem mantém o café intacto.
+                            </span>
+                        </ItemPackage>
+                        <ItemTimer>
+                            <div>
+                                <Timer size={24} color="white"/>
+                            </div>
+                            <span>
+                                Entrega rápida e rastreada.
+                            </span>
+                        </ItemTimer>
+                        <ItemCoffee>
+                            <div>
+                                <Coffee size={24} color="white"/>
+                            </div>
+                            <span>
+                                O café chega fresquinho até você.
+                            </span>
+                        </ItemCoffee>
+
                     </AdvantagesCoffeeDeliveryContainer>   
                 </BrandingCoffeeContainterText>
 

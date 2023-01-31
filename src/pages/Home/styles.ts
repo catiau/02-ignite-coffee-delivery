@@ -29,15 +29,8 @@ export const BrandingCoffeeContainterText = styled.div`
 `
 
 export const AdvantagesCoffeeDeliveryContainer = styled.div`
-    display: flex; 
+    display: flex;
     align-items: center;
-    justify-content: center;
-
-    max-width: 30rem;
-
-    span {
-        font-weight: 400;
-        font-size: 16px;
-    }
+    gap: 2.5rem;
 
 `

@@ -12,7 +12,7 @@ import brandingCoffee from '../../../../assets/coffee-branding.svg'
 import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
 
 
-export function Home() {
+export function Intro() {
     return (
         <BrandingCoffeeContainerBackground>
             <BrandingCoffeeContainer>
@@ -24,7 +24,7 @@ export function Home() {
                     <AdvantagesCoffeeDeliveryContainer>
                         <ItemShoppingCart>
                             <div>
-                                <ShoppingCart size={24} color="white"/>
+                                <ShoppingCart weight="fill" size={24} color="white"/>
                             </div>
                             <span>
                                 Compra simples e segura.
@@ -32,7 +32,7 @@ export function Home() {
                         </ItemShoppingCart>
                         <ItemPackage>
                             <div>
-                                <Package size={24} color="white"/>
+                                <Package weight="fill" size={24} color="white"/>
                             </div>
                             <span>
                                 Embalagem mantém o café intacto.
@@ -40,7 +40,7 @@ export function Home() {
                         </ItemPackage>
                         <ItemTimer>
                             <div>
-                                <Timer size={24} color="white"/>
+                                <Timer weight="fill" size={24} color="white"/>
                             </div>
                             <span>
                                 Entrega rápida e rastreada.
@@ -48,7 +48,7 @@ export function Home() {
                         </ItemTimer>
                         <ItemCoffee>
                             <div>
-                                <Coffee size={24} color="white"/>
+                                <Coffee weight="fill" size={24} color="white"/>
                             </div>
                             <span>
                                 O café chega fresquinho até você.

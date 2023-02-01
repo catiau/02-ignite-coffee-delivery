@@ -18,7 +18,7 @@ export function Header(){
                     Vitória da Conquista, BA
                 </NavLink>
                 <NavLink to={'/'} title='shopping-cart'>
-                    <ShoppingCart size={24}/>
+                    <ShoppingCart weight="fill" size={24}/>
                 </NavLink>
             </nav>
         </HeaderContainer>

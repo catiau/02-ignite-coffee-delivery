@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 16px;
     }
 
-    h2 {
+    h2, h3 {
         font-family: 'Baloo 2', sans-serif;
         font-weight: 800;
         font-size: 48px;

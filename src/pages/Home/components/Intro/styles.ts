@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import coffeeBrandingBackground from '../../assets/coffee-branding-background.svg'
+
+import coffeeBrandingBackground from '../../../../assets/coffee-branding-background.svg'
 
 export const BrandingCoffeeContainer = styled.main`
 

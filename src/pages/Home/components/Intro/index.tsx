@@ -1,6 +1,14 @@
-import { AdvantagesCoffeeDeliveryContainer, BrandingCoffeeContainer, BrandingCoffeeContainerBackground, BrandingCoffeeContainterText, ItemCoffee, ItemPackage, ItemShoppingCart, ItemTimer } from "./styles";
+import { 
+    AdvantagesCoffeeDeliveryContainer, 
+    BrandingCoffeeContainer, 
+    BrandingCoffeeContainerBackground, 
+    BrandingCoffeeContainterText, ItemCoffee, 
+    ItemPackage, 
+    ItemShoppingCart, 
+    ItemTimer } 
+from "./styles";
 
-import brandingCoffee from '../../assets/coffee-branding.svg'
+import brandingCoffee from '../../../../assets/coffee-branding.svg'
 import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
 
 
@@ -53,5 +61,6 @@ export function Home() {
                 <img src={brandingCoffee} />
             </BrandingCoffeeContainer>    
         </BrandingCoffeeContainerBackground>
+
     )
 }

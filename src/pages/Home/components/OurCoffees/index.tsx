@@ -1,14 +1,15 @@
 import { ProductsListContainer } from "./styles";
 
-import { products } from "../../../../data/products"
+import { coffees } from "../../../../data/coffees"
+import { CoffeeCard } from "../CoffeeCard";
 
 export function OurCoffes() {
     return (
             
         <ProductsListContainer>
             <h3>Nossos cafés</h3>
-            {products.map((product) => (
-                <div></div>
+            {coffees.map((coffee) => (
+                <CoffeeCard coffee={coffee}/>
             ))}
         </ProductsListContainer>
     )

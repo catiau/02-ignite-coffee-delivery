@@ -1,3 +1,5 @@
+import { CoffeeCardContentContainer } from './styles'
+
 export interface Coffee {
     title: string;
     description: string;
@@ -13,9 +15,10 @@ interface CoffeeProps {
 
 export function CoffeeCard({ coffee }: CoffeeProps){
     return (
-        <div>
-            <img src={`/available-coffee-list/${coffee.image}`}/>
-            <p>{coffee.title}</p>
-        </div>
+        <CoffeeCardContentContainer>
+            <div>
+                <img src={`/available-coffee-list/${coffee.image}`}/>
+            </div>     
+        </CoffeeCardContentContainer>
     )
 }

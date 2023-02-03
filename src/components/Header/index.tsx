@@ -10,7 +10,7 @@ import { NavLink } from 'react-router-dom'
 
 export function Header(){
     return (
-        <HeaderContainer>
+        <HeaderContainer className="container">
             <img src={coffeeLogo} alt="" />
             <nav>
                 <NavLink to={'/'} title='location'>

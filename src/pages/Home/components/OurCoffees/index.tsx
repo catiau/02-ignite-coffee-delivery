@@ -6,7 +6,7 @@ import { CoffeeCard } from "../CoffeeCard";
 export function OurCoffes() {
     return (
             
-        <OurCoffesContainer>
+        <OurCoffesContainer className="container">
             <h3>Nossos cafés</h3>
             <ProductsListContainer>
                     {

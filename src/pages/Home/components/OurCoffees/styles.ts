@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const OurCoffesContainer = styled.main`
-    margin: 0 10rem;
+    
 
     h3 {
         font-size: 36px;
@@ -10,17 +10,19 @@ export const OurCoffesContainer = styled.main`
 
 export const ProductsListContainer = styled.main`
         display: flex;
-        justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         gap: 2rem;
+        width: 70rem;
+        height: 85rem;
+        position: absolute;
 `
 
-export const CoffeCardConteiner = styled.div`
+export const CoffeCardConteiner = styled.main`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+
 
     width: 16rem;
     height: 19rem;

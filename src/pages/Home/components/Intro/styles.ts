@@ -6,18 +6,20 @@ export const BrandingCoffeeContainer = styled.main`
 
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 8rem 10rem;
+    justify-content: space-between;
     gap: 3.5rem;
     
 
-    flex: 1;
 `
 
 export const BrandingCoffeeContainerBackground = styled.main`
     background-image: url(${coffeeBrandingBackground});
     height: 34rem;
-    min-width: 90rem;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 `
 

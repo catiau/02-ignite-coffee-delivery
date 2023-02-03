@@ -18,7 +18,7 @@ export function CoffeeCard({ coffee }: CoffeeProps){
         <CoffeeCardContentContainer>
             <div>
                 <img src={`/available-coffee-list/${coffee.image}`}/>
-            </div>     
+            </div>  
         </CoffeeCardContentContainer>
     )
 }

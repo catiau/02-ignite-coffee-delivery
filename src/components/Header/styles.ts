@@ -20,11 +20,11 @@ export const HeaderContainer = styled.header`
     }
 
     nav a[title='location'] {
-        background-color: ${(props) => props.theme['purple-light']};
+        background-color: ${(props) => props.theme.colors['purple-light']};
     }
 
     nav a[title='shopping-cart'] {
-        background-color: ${(props) => props.theme['yellow-light']};
-        color: ${(props) => props.theme['yellow-dark']};
+        background-color: ${(props) => props.theme.colors['yellow-light']};
+        color: ${(props) => props.theme.colors['yellow-dark']};
     }
 `

@@ -1,10 +1,17 @@
 import styled from 'styled-components'
+import { rgba } from 'polished'
 
 import coffeeBrandingBackground from '../../../../assets/coffee-branding-background.svg'
 
 
 export const BrandingCoffeeContainer = styled.main`
-    background-image: url(${coffeeBrandingBackground});
+    background: ${({ theme }) => `url(${coffeeBrandingBackground}),
+        linear-gradient(
+            0deg,
+            ${theme.colors["base-white"]} 0%,
+            ${rgba(theme.colors["base-background"], 0.2)} 50%,
+            ${theme.colors["base-background"]} 100%
+    )`};
     height: 34rem;
     background-size: cover;
     width: 100%;

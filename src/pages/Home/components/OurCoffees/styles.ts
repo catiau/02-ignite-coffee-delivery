@@ -6,6 +6,8 @@ export const OurCoffesContainer = styled.main`
     h3 {
         font-size: 36px;
     }
+
+    padding-top: 2rem;
 `
 
 export const ProductsListContainer = styled.main`
@@ -16,6 +18,7 @@ export const ProductsListContainer = styled.main`
         width: 70rem;
         height: 85rem;
         position: absolute;
+        padding-top: 3rem;
 `
 
 export const CoffeCardConteiner = styled.main`

@@ -1,16 +1,16 @@
 import styled from 'styled-components'
 import { rgba } from 'polished'
 
-import coffeeBrandingBackground from '../../../../assets/coffee-branding-background.svg'
+import introBackground from '../../../../assets/intro-background.png'
 
 
-export const BrandingCoffeeContainer = styled.main`
-    background: ${({ theme }) => `url(${coffeeBrandingBackground}),
+export const BrandingCoffeeContainer = styled.section`
+    background: ${({ theme }) => `url(${introBackground}) no-repeat center,
         linear-gradient(
             0deg,
-            ${theme.colors["base-white"]} 0%,
-            ${rgba(theme.colors["base-background"], 0.2)} 50%,
-            ${theme.colors["base-background"]} 100%
+            ${theme.colors["base-white"]} 100%,
+            ${rgba(theme.colors["base-background"], 0.3)} 90%,
+            ${theme.colors["base-background"]} 80%
     )`};
     height: 34rem;
     background-size: cover;
@@ -20,7 +20,7 @@ export const BrandingCoffeeContainer = styled.main`
     justify-content: center;
 `
 
-export const BrandingCoffeeContent = styled.section`
+export const BrandingCoffeeContent = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;

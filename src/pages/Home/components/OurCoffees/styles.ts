@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const OurCoffesContainer = styled.main`
-    
 
     h3 {
         font-size: 36px;
@@ -25,6 +24,7 @@ export const CoffeCardConteiner = styled.main`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1.25rem;
 
 
     width: 16rem;

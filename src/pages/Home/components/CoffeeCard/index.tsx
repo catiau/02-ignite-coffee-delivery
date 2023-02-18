@@ -1,4 +1,4 @@
-import { CoffeeCardContentContainer } from './styles'
+import { CoffeeCardContentContainer, CoffeeTag, CoffeTag } from './styles'
 
 export interface Coffee {
     title: string;
@@ -16,11 +16,15 @@ interface CoffeeProps {
 export function CoffeeCard({ coffee }: CoffeeProps){
     return (
         <CoffeeCardContentContainer>
-            <div className='coffeeImage'>
-                <img src={`/available-coffee-list/${coffee.image}`}/>
-            </div>
-            <div>
-                <p>{coffee.tags}</p>
+            <img src={`/available-coffee-list/${coffee.image}`}/>
+            
+            <div className='coffeeInformation'>
+                <CoffeTag>
+                    {coffee.tags.map((tag) => (
+                        <p>{tag}</p>
+                    ))}
+                    
+                </CoffeTag>
                 <h4>{coffee.title}</h4>
                 <span>{coffee.description}</span>
             </div>

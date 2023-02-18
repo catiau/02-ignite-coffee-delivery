@@ -22,7 +22,30 @@ export function Intro() {
                     
 
                         <AdvantagesContainer>
-                            
+                            <div className="item">
+                                <div id="item1">
+                                    <ShoppingCart weight="fill" color="#FFFF" />
+                                </div>
+                                <span>Compra simples e segura</span>
+                            </div>
+                            <div className="item">
+                                <div id="item2">
+                                    <Package weight="fill" color="#FFFF" />
+                                </div>
+                                <span>Embalagem mantém o café intacto</span>
+                            </div>
+                            <div className="item">
+                                <div id="item3">
+                                    <Timer weight="fill" color="#FFFF"/>
+                                </div>
+                                <span>Entrega rápida e rastreada</span>
+                            </div>
+                            <div className="item">
+                                <div id="item4">
+                                    <Coffee weight="fill" color="#FFFF"/>
+                                </div>
+                                <span>O café chega fresquinho até você</span>
+                            </div>
                          
                         </AdvantagesContainer>
                     </div>

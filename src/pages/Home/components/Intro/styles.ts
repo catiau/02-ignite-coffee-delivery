@@ -7,10 +7,10 @@ import introBackground from '../../../../assets/intro-background.png'
 export const BrandingCoffeeContainer = styled.section`
     background: ${({ theme }) => `url(${introBackground}) no-repeat center,
         linear-gradient(
-            360deg,
-            ${theme.colors["base-white"]} 100%,
-            ${rgba(theme.colors["base-background"], 0.8)} 0%,
-            ${theme.colors["base-background"]} 100%
+            0deg,
+            ${theme.colors['base-white']} 0%,
+            ${rgba(theme.colors['base-background'], 0.2)} 50%,
+            ${theme.colors['base-background']} 100%
     )`};
     height: 34rem;
     background-size: cover;

@@ -7,6 +7,10 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    body {
+        background-color: ${(props) => props.theme.colors['base-background']};
+    }
+
     a, span {
         font-family: 'Roboto', sans-serif;
         font-weight: 400;

@@ -16,11 +16,17 @@ export const QuantityContainer = styled.div`
         width: 100%;
         color: black;
         text-align: center;
+        outline: none;
     }
 
 
 `
 
-export const IconControl = styled.div`
+export const IconControl = styled.button.attrs({
+    type: 'button',
+})`
+    border: none;
+    background: none;
+    transition: 0.4s;
 
 `

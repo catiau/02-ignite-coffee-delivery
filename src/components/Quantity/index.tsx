@@ -10,7 +10,7 @@ interface QuantityProps {
 export function Quantity({ onIncrease, onDecrease, quantity} : QuantityProps){
     return (
         <QuantityContainer>
-            <IconControl onClick={onDecrease}>
+            <IconControl onClick={onDecrease} disabled={quantity <= 1}>
                 <Minus weight="fill" color="#8047F8"/>
             </IconControl>
             <input type="number" readOnly value={quantity} />

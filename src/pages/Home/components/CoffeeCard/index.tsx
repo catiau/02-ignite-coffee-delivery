@@ -1,4 +1,7 @@
-import { CoffeeCardContentContainer, CoffeeTag, CoffeTag } from './styles'
+import { ShoppingCart } from 'phosphor-react';
+import { useState } from 'react'
+import { Quantity } from '../../../../components/Quantity';
+import { CoffeeCardContentContainer, CoffeeTag, CoffePriceInformations, ShoppingCartContainer } from './styles'
 
 export interface Coffee {
     title: string;
@@ -14,31 +17,33 @@ interface CoffeeProps {
 
 
 export function CoffeeCard({ coffee }: CoffeeProps){
+     const [first, setfirst] = useState(1)
+
     return (
         <CoffeeCardContentContainer>
             <img src={`/available-coffee-list/${coffee.image}`}/>
             
             <div className='coffeeInformation'>
-                <CoffeTag>
+                <CoffeeTag>
                     {coffee.tags.map((tag) => (
                         <p>{tag}</p>
                     ))}
                     
-                </CoffeTag>
+                </CoffeeTag>
                 <h4>{coffee.title}</h4>
                 <span>{coffee.description}</span>
             </div>
-            <div>
+            <CoffePriceInformations>
                 <div>
                     <span>R${coffee.price}</span>
                 </div>
-                <div>Count</div>
                 <div>
-
+                    <Quantity />
+                    <ShoppingCartContainer>
+                            <ShoppingCart weight='fill' color='#fff' />
+                    </ShoppingCartContainer>
                 </div>
-            </div>
-
-
+            </CoffePriceInformations>
         </CoffeeCardContentContainer>
     )
 }

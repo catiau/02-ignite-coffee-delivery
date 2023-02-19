@@ -4,14 +4,13 @@ export const CoffeeCardContentContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    gap: 2rem;
 
     img {
         width: 7.5rem;
         height: 7.5rem;
-        margin-top: -6.5rem;
+        margin-top: -4rem;
     }
-
 
     h4 {
         font-family: 'Baloo 2';
@@ -19,6 +18,7 @@ export const CoffeeCardContentContainer = styled.div`
         font-size: 1.25rem;
         line-height: 1.6rem;
         color: #403937;
+        padding-top: 1rem;
     }
 
     .coffeeInformation {
@@ -29,19 +29,19 @@ export const CoffeeCardContentContainer = styled.div`
         padding: 0 1.4rem;
     }
 
-    span {
+    .coffeeInformation span {
         font-family: 'Roboto';
         font-weight: 400;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         line-height: 1.2rem;
+        color: #8D8686;
+        padding-top: 0.5rem;
+        text-align: center;
     }
-
-
 `
 
-export const CoffeTag = styled.div`
+export const CoffeeTag = styled.div`
 
-    
         width: 100%;
         display: flex;
         align-items: center;
@@ -49,21 +49,42 @@ export const CoffeTag = styled.div`
         flex-wrap: wrap;
         gap: 4px;
 
-
-        
         p {
-
             color: ${(props) => props.theme.colors['yellow-dark']};
             background-color: ${(props) => props.theme.colors['yellow-light']};
             font-family: 'Roboto', sans-serif;
             font-weight: 700;
             font-size: 0.7rem;
+            text-transform: uppercase;
 
             border-radius: 100px;
-
-    
-    
             padding: 0.25rem 0.5rem;
         }
 
+`
+
+export const CoffePriceInformations = styled.div `
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    div {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+`
+
+export const ShoppingCartContainer = styled.div`
+        width: 2rem;
+        height: 2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #4B2995;
+        border-radius: 6px;
+        cursor: pointer;
 `

@@ -17,7 +17,15 @@ interface CoffeeProps {
 
 
 export function CoffeeCard({ coffee }: CoffeeProps){
-     const [first, setfirst] = useState(1)
+     const [quantity, setQuantity] = useState(1)
+
+     function handleIncreaseQuantity(){
+
+     }
+
+     function handleDecreaseQuantity(){
+
+     }
 
     return (
         <CoffeeCardContentContainer>
@@ -38,7 +46,11 @@ export function CoffeeCard({ coffee }: CoffeeProps){
                     <span>R${coffee.price}</span>
                 </div>
                 <div>
-                    <Quantity />
+                    <Quantity 
+                        quantity={quantity}
+                        onIncrease={handleIncreaseQuantity}
+                        onDecrease={handleDecreaseQuantity}
+                    />
                     <ShoppingCartContainer>
                             <ShoppingCart weight='fill' color='#fff' />
                     </ShoppingCartContainer>

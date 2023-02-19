@@ -1,22 +1,23 @@
 import styled from 'styled-components'
 
 export const QuantityContainer = styled.div`
-    width: 70%;
-    height: 2.4rem;
+    width: 7rem;
     display: flex;
-    flex-direction: space-between;
+    gap: 4px;
 
-    /* Base/Button */
 
     background: #E6E5E5;
     border-radius: 6px;
     padding: 0.75rem 0.5rem;
 
     input {
-        background-color: transparent;
+        background: none;
         border: none;
-        width: 1rem;
+        width: 100%;
+        color: black;
+        text-align: center;
     }
+
 
 `
 

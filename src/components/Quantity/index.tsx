@@ -1,13 +1,13 @@
 import { Minus, Plus } from "phosphor-react";
 import { IconControl, QuantityContainer } from "./styles";
 
-interface QuantityInputProps {
+interface QuantityProps {
     quantity: number;
     onIncrease: () => void;
     onDecrease: () => void;
   }
 
-export function Quantity({ onIncrease, onDecrease, quantity} : QuantityInputProps){
+export function Quantity({ onIncrease, onDecrease, quantity} : QuantityProps){
     return (
         <QuantityContainer>
             <IconControl onClick={onDecrease}>

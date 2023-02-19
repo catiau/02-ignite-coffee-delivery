@@ -65,26 +65,16 @@ export const CoffeeTag = styled.div`
 
 export const CoffePriceInformations = styled.div `
     width: 100%;
+
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-
-    div {
-        display: flex;
-        gap: 1rem;
-        align-items: center;
-    }
+    justify-content: center;
+    padding-inline: 1.5rem;
+    gap: 1.5rem;
 `
 
 export const ShoppingCartContainer = styled.div`
-        width: 2rem;
-        height: 2rem;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        background-color: #4B2995;
-        border-radius: 6px;
-        cursor: pointer;
+    background: #4B2995;
+    border-radius: 6px;
+    padding: 0.5rem;
 `

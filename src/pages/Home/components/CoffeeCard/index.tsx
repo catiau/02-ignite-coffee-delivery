@@ -45,16 +45,14 @@ export function CoffeeCard({ coffee }: CoffeeProps){
                 <div>
                     <span>R${coffee.price}</span>
                 </div>
-                <div>
-                    <Quantity 
+                <Quantity 
                         quantity={quantity}
                         onIncrease={handleIncreaseQuantity}
                         onDecrease={handleDecreaseQuantity}
-                    />
-                    <ShoppingCartContainer>
-                            <ShoppingCart weight='fill' color='#fff' />
-                    </ShoppingCartContainer>
-                </div>
+                />
+                <ShoppingCartContainer>
+                    <ShoppingCart color='#FFFF' weight='fill'/>
+                </ShoppingCartContainer>
             </CoffePriceInformations>
         </CoffeeCardContentContainer>
     )

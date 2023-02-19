@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 export const QuantityContainer = styled.div`
-    width: 7rem;
     display: flex;
-    gap: 4px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
 
 
     background: #E6E5E5;
@@ -13,10 +14,12 @@ export const QuantityContainer = styled.div`
     input {
         background: none;
         border: none;
-        width: 100%;
+        width: 2.1rem;
         color: black;
-        text-align: center;
         outline: none;
+        
+        text-align: right;
+        
     }
 
 

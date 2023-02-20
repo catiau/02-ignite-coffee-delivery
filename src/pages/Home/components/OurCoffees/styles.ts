@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const OurCoffesContainer = styled.main`
 
+
     h3 {
         font-size: 36px;
     }
@@ -16,7 +17,7 @@ export const ProductsListContainer = styled.main`
         gap: 2rem;
         width: 70rem;
         height: 85rem;
-        position: absolute;
+        margin-bottom: 15rem;
         padding-top: 3rem;
 `
 

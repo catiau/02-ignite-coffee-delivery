@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         background-color: ${(props) => props.theme.colors['base-background']};
+        padding-bottom: 2rem;
     }
 
     a, span {

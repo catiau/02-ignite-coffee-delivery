@@ -2,7 +2,7 @@ import { ShoppingCart } from 'phosphor-react';
 import { useState } from 'react'
 import { Quantity } from '../../../../components/Quantity';
 import { CoffeeCardContentContainer, CoffeeTag, CoffePriceInformations, ShoppingCartContainer } from './styles'
-
+import { formatMoney } from '../../../../utils/formatMoney';
 export interface Coffee {
     title: string;
     description: string;
@@ -16,6 +16,7 @@ interface CoffeeProps {
 }
 
 
+
 export function CoffeeCard({ coffee }: CoffeeProps){
      const [quantity, setQuantity] = useState(1)
 
@@ -26,6 +27,8 @@ export function CoffeeCard({ coffee }: CoffeeProps){
      function handleDecreaseQuantity(){
         setQuantity((prev) => prev - 1)
      }
+
+     const formattedPrice = formatMoney(coffee.price)
 
     return (
         <CoffeeCardContentContainer>
@@ -42,8 +45,9 @@ export function CoffeeCard({ coffee }: CoffeeProps){
                 <span>{coffee.description}</span>
             </div>
             <CoffePriceInformations>
-                <div>
-                    <span>R${coffee.price}</span>
+                <div className='price'>
+                    <span>R$</span>
+                    <strong>{formattedPrice}</strong>
                 </div>
                 <Quantity 
                         quantity={quantity}

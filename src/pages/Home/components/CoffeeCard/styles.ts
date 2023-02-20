@@ -71,6 +71,28 @@ export const CoffePriceInformations = styled.div `
     justify-content: center;
     padding-inline: 1.5rem;
     gap: 1.5rem;
+
+    .price {
+        display: flex;
+        gap: 0.3rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    span {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.2rem;
+        color: #574F4D;
+    }
+
+    strong {
+        font-family: 'Baloo 2';
+        font-weight: 700;
+        font-size: 22px;
+        color: #574F4D;
+    }
 `
 
 export const ShoppingCartContainer = styled.div`

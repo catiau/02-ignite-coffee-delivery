@@ -1,11 +1,21 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
     padding-top: 2rem;
     padding-bottom: 2rem;
+    background-color: ${(props) => props.theme.colors['base-background']};
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
 
     nav {

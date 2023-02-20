@@ -26,10 +26,17 @@ export const QuantityContainer = styled.div`
 `
 
 export const IconControl = styled.button.attrs({
-    type: 'button',
+    type: "button",
 })`
     border: none;
+    cursor: pointer;
     background: none;
     transition: 0.4s;
+
+    &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
 
 `

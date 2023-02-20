@@ -43,7 +43,6 @@ export const AdvantagesContainer = styled.div`
     flex-wrap: wrap;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-top: 4.2rem;
 
     .item {

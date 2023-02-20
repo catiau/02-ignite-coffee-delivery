@@ -77,4 +77,5 @@ export const ShoppingCartContainer = styled.div`
     background: #4B2995;
     border-radius: 6px;
     padding: 0.5rem;
+    cursor: pointer;
 `

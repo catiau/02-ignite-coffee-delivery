@@ -10,17 +10,21 @@ import { NavLink } from 'react-router-dom'
 
 export function Header(){
     return (
-        <HeaderContainer className="container">
-            <img src={coffeeLogo} alt="" />
-            <nav>
-                <NavLink to={'/'} title='location'>
-                    <img src={locationIcon} alt="" />
-                    Vitória da Conquista, BA
+        <HeaderContainer>
+            <div className="container">
+                <NavLink to={'/'}>
+                    <img src={coffeeLogo} alt="" />
                 </NavLink>
-                <NavLink to={'/'} title='shopping-cart'>
-                    <ShoppingCart weight="fill" size={24}/>
-                </NavLink>
-            </nav>
+                <nav>
+                    <NavLink to={'/'} title='location'>
+                        <img src={locationIcon} alt="" />
+                        Vitória da Conquista, BA
+                    </NavLink>
+                    <NavLink to={'/'} title='shopping-cart'>
+                        <ShoppingCart weight="fill" size={24}/>
+                    </NavLink>
+                </nav>
+            </div>
         </HeaderContainer>
     )
 }

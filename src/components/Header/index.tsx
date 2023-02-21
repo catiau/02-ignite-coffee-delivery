@@ -8,7 +8,11 @@ import { ShoppingCart } from 'phosphor-react'
 
 import { NavLink } from 'react-router-dom'
 
+import { useCart } from '../../hooks/useCart'
+
 export function Header(){
+
+    const { cartQuantity } = useCart()
     return (
         <HeaderContainer>
             <div className="container">
@@ -21,6 +25,7 @@ export function Header(){
                         Vitória da Conquista, BA
                     </NavLink>
                     <NavLink to={'/'} title='shopping-cart'>
+                        {cartQuantity >= 1 && <span>{cartQuantity}</span>}
                         <ShoppingCart weight="fill" size={24}/>
                     </NavLink>
                 </nav>

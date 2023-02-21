@@ -29,6 +29,7 @@ export const HeaderContainer = styled.header`
         text-decoration: none;
         padding: 0.5rem;
         border-radius: 8px;
+        position: relative;
     }
 
     nav a[title='location'] {
@@ -38,5 +39,23 @@ export const HeaderContainer = styled.header`
     nav a[title='shopping-cart'] {
         background-color: ${(props) => props.theme.colors['yellow-light']};
         color: ${(props) => props.theme.colors['yellow-dark']};
+    }
+
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        font-size: 12px;
+    
+        position: absolute;
+        height: 1.25rem;
+        top: calc(-1.25rem / 2);
+        right: calc(-1.25rem / 2);
+        color: #FFFF;
+
+        background-color: ${(props) => props.theme.colors['yellow-dark']};
+        border-radius: 999px;
     }
 `

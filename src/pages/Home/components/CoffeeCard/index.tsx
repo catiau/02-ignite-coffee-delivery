@@ -3,8 +3,10 @@ import { useState } from 'react'
 import { Quantity } from '../../../../components/Quantity';
 import { CoffeeCardContentContainer, CoffeeTag, CoffePriceInformations, ShoppingCartContainer } from './styles'
 import { formatMoney } from '../../../../utils/formatMoney';
+import { useCart } from '../../../../hooks/useCart';
 export interface Coffee {
     title: string;
+    id: number,
     description: string;
     price: number;
     tags: string[];
@@ -26,6 +28,17 @@ export function CoffeeCard({ coffee }: CoffeeProps){
 
      function handleDecreaseQuantity(){
         setQuantity((prev) => prev - 1)
+     }
+
+     const { addCoffeeToCart } = useCart();
+
+     function handleAddToCart(){
+        const coffeeToAdd = {
+            ...coffee, 
+            quantity,
+        }
+        addCoffeeToCart(coffeeToAdd)
+        console.log(coffeeToAdd)
      }
 
      const formattedPrice = formatMoney(coffee.price)
@@ -54,7 +67,7 @@ export function CoffeeCard({ coffee }: CoffeeProps){
                         onIncrease={handleIncreaseQuantity}
                         onDecrease={handleDecreaseQuantity}
                 />
-                <ShoppingCartContainer>
+                <ShoppingCartContainer onClick={handleAddToCart}>
                     <ShoppingCart color='#FFFF' weight='fill'/>
                 </ShoppingCartContainer>
             </CoffePriceInformations>

@@ -1,6 +1,7 @@
 export const coffees = [
     {
         title: "Expresso Tradicional",
+        id: "1",
         description: "O tradicional café feito com água quente e grãos moídos.",
         price: 9.90,
         tags: ["Tradicional"],
@@ -8,6 +9,7 @@ export const coffees = [
     },
     {
         title: "Expresso Americano",
+        id: "2",
         description: "Expresso diluído, menos intenso que o tradicional.",
         price: 9.90,
         tags: ["Tradicional"],
@@ -15,6 +17,7 @@ export const coffees = [
     },
     {
         title: "Expresso Cremoso",
+        id: "3",
         description: "Café expresso tradicional com espuma cremosa.",
         price: 9.90,
         tags: ["Tradicional"],
@@ -22,6 +25,7 @@ export const coffees = [
     },
     {
         title: "Expresso Gelado",
+        id: "4",
         description: "Bebida preparada com café expresso e cubos de gelo.",
         price: 9.90,
         tags: ["Tradicional", "Gelado"],
@@ -29,6 +33,7 @@ export const coffees = [
     },
     {
         title: "Café com Leite",
+        id: "5",
         description: "Meio a meio de expresso tradicional com leite vaporizado.",
         price: 9.90,
         tags: ["Tradicional", "Com Leite"],
@@ -36,6 +41,7 @@ export const coffees = [
     },
     {
         title: "Latte",
+        id: "6",
         description: "Uma dose de café expresso com o dobro de leite e espuma cremosa.",
         price: 9.90,
         tags: ["Tradicional", "Com Leite"],
@@ -43,6 +49,7 @@ export const coffees = [
     },
     {
         title: "Capuccino",
+        id: "7",
         description: "Bebida com canela feita de doses iguais de café, leite e espuma.",
         price: 9.90,
         tags: ["Tradicional", "Com Leite"],
@@ -50,6 +57,7 @@ export const coffees = [
     },
     {
         title: "Macchiato",
+        id: "8",
         description: "Café expresso misturado com um pouco de leite quente e espuma.",
         price: 9.90,
         tags: ["Tradicional", "Com Leite"],
@@ -57,6 +65,7 @@ export const coffees = [
     },
     {
         title: "Moccacino",
+        id: "9",
         description: "Café expresso com calda de chocolate, pouco leite e espuma.",
         price: 9.90,
         tags: ["Tradicional", "Com Leite"],
@@ -64,6 +73,7 @@ export const coffees = [
     },
     {
         title: "Chocolate Quente",
+        id: "10",
         description: "Bebida feita com chocolate dissolvido no leite quente e café.",
         price: 9.90,
         tags: ["Especial", "Com Leite"],
@@ -71,6 +81,7 @@ export const coffees = [
     },
     {
         title: "Cubano",
+        id: "11",
         description: "Drink gelado de café expresso com rum, creme de leite e hortelã.",
         price: 9.90,
         tags: ["Especial", "Alcoólico", "Gelado"],
@@ -78,6 +89,7 @@ export const coffees = [
     },
     {
         title: "Havaiano",
+        id: "12",
         description: "Bebida adocicada preparada com café e leite de coco.",
         price: 9.90,
         tags: ["Especial"],
@@ -85,6 +97,7 @@ export const coffees = [
     },
     {
         title: "Árabe",
+        id: "13",
         description: "Bebida preparada com grãos de café árabe e especiarias.",
         price: 9.90,
         tags: ["Especial"],
@@ -92,6 +105,7 @@ export const coffees = [
     },
     {
         title: "Irlandês",
+        id: "14",
         description: "Bebida a base de café, uísque irlandês, açúcar e chantilly.",
         price: 9.90,
         tags: ["Especial", "Alcoólico"],

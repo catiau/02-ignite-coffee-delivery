@@ -24,7 +24,7 @@ export function Header(){
                         <img src={locationIcon} alt="" />
                         Vitória da Conquista, BA
                     </NavLink>
-                    <NavLink to={'/'} title='shopping-cart'>
+                    <NavLink to={'/complete-order'} title='shopping-cart'>
                         {cartQuantity >= 1 && <span>{cartQuantity}</span>}
                         <ShoppingCart weight="fill" size={24}/>
                     </NavLink>

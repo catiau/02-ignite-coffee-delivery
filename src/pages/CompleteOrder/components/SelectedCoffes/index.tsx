@@ -10,7 +10,7 @@ export function SelectedCoffees() {
             <h4>Cafés selecionados</h4>
             <SelectedCoffeesContent>
                 {cartItems.map((item) => (
-                    
+                    <div>Olá</div>
                 ))}
             </SelectedCoffeesContent>
         </SelectedCoffeesContainer>

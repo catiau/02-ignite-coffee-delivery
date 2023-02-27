@@ -1,5 +1,6 @@
 import { SelectedCoffeesContainer, SelectedCoffeesContent } from "./styles";
 import { useCart } from "../../../../hooks/useCart"
+import { CoffeeCardCart } from "../CoffeeCardCart";
 
 export function SelectedCoffees() {
 
@@ -10,7 +11,7 @@ export function SelectedCoffees() {
             <h4>Cafés selecionados</h4>
             <SelectedCoffeesContent>
                 {cartItems.map((item) => (
-                    <div>Olá</div>
+                    <CoffeeCardCart coffee={item}/>
                 ))}
             </SelectedCoffeesContent>
         </SelectedCoffeesContainer>

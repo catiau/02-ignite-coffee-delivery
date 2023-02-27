@@ -2,6 +2,9 @@ import { useForm, FormProvider } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import * as zod from "zod"
 import { CompleteOrderForm } from "./components/CompleteOrderForm"
+import { CompleteOrderContainer } from "./styles"
+import { SelectedCoffees } from "./components/SelectedCoffes"
+
 
 enum PaymentMethods {
     credit = "credit",
@@ -41,11 +44,10 @@ export function CompleteOrder(){
 
     return (
         <FormProvider {...confirmOrderForm}>
-            {/* <CompleteOrderContainer 
-                onSubmit={handleSubmit(handleConfirmOrder)}
-            /> */}
-            <CompleteOrderForm/>
-
+            <CompleteOrderContainer className="container">
+                <CompleteOrderForm/>
+                <SelectedCoffees />
+            </CompleteOrderContainer>
         </FormProvider>
 
     )

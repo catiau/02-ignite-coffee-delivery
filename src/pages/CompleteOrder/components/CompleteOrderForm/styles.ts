@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 
-export const CompleteOrderForContainer = styled.div`
+export const CompleteOrderFormContainer = styled.div`
     
     padding-top: 2.5rem;
 

@@ -1,10 +1,10 @@
-import { MapPinLine } from "phosphor-react";
+import { CurrencyDollar, MapPinLine } from "phosphor-react";
 import { AdressForm } from "../AdressForm/AdressForm";
-import { AdressFormSection, AdressFormTitle, CompleteOrderForContainer } from "./styles";
+import { AdressFormSection, AdressFormTitle, CompleteOrderFormContainer } from "./styles";
 
 export function CompleteOrderForm(){
     return (
-        <CompleteOrderForContainer className="container">
+        <CompleteOrderFormContainer className="container">
             <h4>Complete o seu pedido</h4>
 
             <AdressFormSection>
@@ -17,6 +17,17 @@ export function CompleteOrderForm(){
                 </AdressFormTitle>
                 <AdressForm />
             </AdressFormSection>
-        </CompleteOrderForContainer>
+
+            <AdressFormSection>
+                <AdressFormTitle>
+                    <CurrencyDollar size={24} color="#8047F8"/>
+                    <div>
+                        <h5>Pagamento</h5>
+                        <span>O pagamento é feito na entrega. Escolha a forma que deseja pagar</span>
+                    </div>
+                </AdressFormTitle>
+            </AdressFormSection>
+
+        </CompleteOrderFormContainer>
     )
 }

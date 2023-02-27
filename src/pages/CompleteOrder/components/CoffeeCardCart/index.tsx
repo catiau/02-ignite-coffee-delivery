@@ -50,8 +50,8 @@ export function CoffeeCardCart({ coffee }:CoffeeCartCardProps){
                         </RemoveButton>
                     </ActionsContainer>
                 </div>
-            </div>
             <p>R$ {formatedPrice}</p>
+            </div>
         </CoffeeCardCartContainer>
     )
 }

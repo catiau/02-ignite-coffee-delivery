@@ -1,9 +1,8 @@
 import styled from "styled-components"
 
 export const CoffeeCardCartContainer = styled.div`
-    padding: 2.5rem;
+    padding-inline: 2.5rem;
     display: flex;
-    justify-content: space-between;
 
     img {
         width: 4rem;
@@ -12,9 +11,11 @@ export const CoffeeCardCartContainer = styled.div`
 
     .info {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         gap: 1.2rem;
+        padding-top: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #E6E5E5;
     }
 
     p {
@@ -33,12 +34,14 @@ export const CoffeeTagCart = styled.div`
     color: #403937;
 
     padding-bottom: 0.5rem;
+    
 
 `
 
 export const ActionsContainer = styled.div`
     display: flex;
     gap: 0.5rem;
+    
 
 `
 

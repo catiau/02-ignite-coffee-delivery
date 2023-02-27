@@ -17,7 +17,6 @@ export const SelectedCoffeesContainer = styled.div`
 
 export const SelectedCoffeesContent = styled.div`
     width: 100%;
-    height: 92%;
 
     margin-top: 1rem;
 

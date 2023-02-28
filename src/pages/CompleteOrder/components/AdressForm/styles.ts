@@ -11,16 +11,16 @@ export const AdressFormContainer = styled.div`
     row-gap: 1rem;
     grid-auto-flow: dense;
     
-    #cep {
+    .cep {
         grid-column: span 3;
         max-width: 12.5rem;
     }
 
-    #rua {
+    .street {
         grid-column: span 3;
     }
 
-    #complemento {
+    .complement {
         grid-column: span 2;
     }
 

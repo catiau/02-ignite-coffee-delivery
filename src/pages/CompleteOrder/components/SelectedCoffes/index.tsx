@@ -5,7 +5,7 @@ import { ConfirmationOrder } from "../ConfirmationOrder";
 
 export function SelectedCoffees() {
 
-    const {cartItems } = useCart()
+    const { cartItems } = useCart()
 
     return (
         <SelectedCoffeesContainer>

@@ -1,53 +1,59 @@
-import { useFormContext } from "react-hook-form"
-import { AdressFormContainer } from "./styles"
+import { AdressFormContainer } from "./styles";
+import { useFormContext } from "react-hook-form";
+import { Input } from "../../../../components/Input";
 
-export function AdressForm(){
-    const { register, formState } = useFormContext()
+interface ErrorsType {
+  errors: {
+    [key: string]: {
+      message: string;
+    };
+  };
+}
 
-    return (
-        <AdressFormContainer>
-            <input 
-                type="number" 
-                placeholder="CEP" 
-                id="cep"
-                {...register("cep")}
-            />
-            <input 
-                type="string" 
-                placeholder="Rua" 
-                id="rua"
-                {...register("rua")}
-            />
-            <input 
-                type="number" 
-                placeholder="Número" 
-                id="numero"
-                {...register("numero")}
-            />
-            <input 
-                type="string" 
-                placeholder="Complemento" 
-                id="complemento"
-                {...register("cep")}
-            />
-            <input 
-                type="string" 
-                placeholder="Bairro" 
-                id="bairro"
-                {...register("bairro")}
-            />
-            <input 
-                type="string" 
-                placeholder="Cidade" 
-                id="cidade"
-                {...register("cidade")}
-            />
-            <input 
-                type="string" 
-                placeholder="UF" 
-                id="estado"
-                {...register("estado")}
-            />
-        </AdressFormContainer>
-    )
+export function AddressForm() {
+  const { register, formState } = useFormContext();
+
+  const { errors } = formState as ErrorsType;
+
+  return (
+    <AdressFormContainer>
+      <Input
+        placeholder="CEP"
+        type="number"
+        className="cep"
+        {...register("cep")}
+        error={errors.cep?.message}
+      />
+      <Input
+        placeholder="Rua"
+        className="street"
+        {...register("street")}
+        error={errors.street?.message}
+      />
+      <Input
+        type="number"
+        placeholder="Número"
+        {...register("number")}
+        error={errors.number?.message}
+      />
+      <Input
+        placeholder="Complemento"
+        className="complement"
+        {...register("complement")}
+        error={errors.complement?.message}
+        rightText="Opcional"
+      />
+      <Input
+        placeholder="Bairro"
+        {...register("district")}
+        error={errors.district?.message}
+      />
+      <Input
+        placeholder="Cidade"
+        {...register("city")}
+        error={errors.city?.message}
+      />
+      <Input placeholder="UF" {...register("uf")} error={errors.uf?.message} />
+    </AdressFormContainer>
+  );
 }

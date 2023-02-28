@@ -1,3 +1,4 @@
+import { Button } from "../../../../components/Button";
 import { formatMoney } from "../../../../utils/formatMoney"
 import { useCart } from "../../../../hooks/useCart"
 import { ConfirmationOrderContainer } from "./styles";
@@ -28,9 +29,7 @@ export function ConfirmationOrder(){
                 <strong>Total</strong>
                 <strong>{formattedCartTotal}</strong>
             </div>
-            <button type="submit">
-                Confirmar pedido
-            </button>
+            <Button text="Confirmar pedido" type="submit"/>
         </ConfirmationOrderContainer>
     )
 }

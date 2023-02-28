@@ -13,7 +13,7 @@ interface ErrorsType {
 export function AddressForm() {
   const { register, formState } = useFormContext();
 
-  const { errors } = formState as ErrorsType;
+  const { errors } = formState as unknown as ErrorsType;
 
   return (
     <AdressFormContainer>
@@ -21,39 +21,38 @@ export function AddressForm() {
         placeholder="CEP"
         type="number"
         className="cep"
-        {...register("cep")}
-        error={errors.cep?.message}
+        {...register('cep')}
+        required
       />
       <Input
         placeholder="Rua"
         className="street"
-        {...register("street")}
-        error={errors.street?.message}
+        {...register('street')}
+        required
       />
       <Input
         type="number"
         placeholder="Número"
-        {...register("number")}
-        error={errors.number?.message}
+        {...register('number')}
+        required
       />
       <Input
         placeholder="Complemento"
         className="complement"
-        {...register("complement")}
-        error={errors.complement?.message}
+        {...register('complement')}
         rightText="Opcional"
       />
       <Input
         placeholder="Bairro"
-        {...register("district")}
-        error={errors.district?.message}
+        {...register('district')}
+        required
       />
       <Input
         placeholder="Cidade"
-        {...register("city")}
-        error={errors.city?.message}
+        {...register('city')}
+        required
       />
-      <Input placeholder="UF" {...register("uf")} error={errors.uf?.message} />
+      <Input placeholder="UF" {...register("uf")} required />
     </AdressFormContainer>
   );
 }

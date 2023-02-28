@@ -1,5 +1,5 @@
 import { CurrencyDollar, MapPinLine } from "phosphor-react";
-import { AddressForm } from "../AdressForm/AdressForm";
+import { AddressForm } from "./AdressForm";
 import { PaymentMethodOptions } from "./PaymentMethoOptions";
 import { AdressFormSection, AdressFormTitle, CompleteOrderFormContainer } from "./styles";
 

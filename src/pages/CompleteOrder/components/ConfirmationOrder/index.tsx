@@ -29,7 +29,7 @@ export function ConfirmationOrder(){
                 <strong>Total</strong>
                 <strong>{formattedCartTotal}</strong>
             </div>
-            <Button text="Confirmar pedido" type="submit"/>
+            <Button disabled={cartQuantity <= 0} text="Confirmar pedido" type="submit"/>
         </ConfirmationOrderContainer>
     )
 }

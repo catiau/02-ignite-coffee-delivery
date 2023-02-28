@@ -7,10 +7,10 @@ export const PaymentMethodContainer = styled.div`
   }
   input:checked + label div {
     ${({ theme }) => css`
-      background: ${theme.colors["brand-purple-light"]};
-      border-color: ${theme.colors["brand-purple"]};
+      background: #EBE5F9;
+      border-color: #8047F8;
       &:hover {
-        background: ${theme.colors["brand-purple-light"]};
+        background: #EBE5F9;
       }
     `}
   }
@@ -28,13 +28,13 @@ export const ContentContainer = styled.div`
   text-transform: uppercase;
   border-radius: 6px;
   height: 3rem;
-  border: 1px solid ${({ theme }) => theme.colors["base-button"]};
+  border: 1px solid #E6E5E5;
   transition: 0.4s;
   svg {
-    color: ${({ theme }) => theme.colors["brand-purple"]};
+    color: #8047F8;
   }
   &:hover {
-    background: red;
+    background: #EBE5F9;
   }
   user-select: none;
 `;

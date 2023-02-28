@@ -20,8 +20,8 @@ interface InputStyledContainerProps {
 export const InputStyleContainer = styled.div<InputStyledContainerProps>`
   height: 2.625rem;
   border-radius: 4px;
-  border: 1px solid ${(props) => props.theme.colors['base-button']};
-  background: ${(props) => props.theme.colors['base-input']};
+  border: 1px solid #E6E5E5;
+  background: #EEEDED;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,7 +45,7 @@ export const InputStyled = styled(InputMask)`
   font-size: 0.75rem;
   padding: 0 0.75rem;
   &::placeholder {
-    color: ${(props) => props.theme.colors['base-label']};
+    color: #8D8686;
   }
 `
 
@@ -53,5 +53,5 @@ export const RightText = styled.p`
   font-size: 0.75rem;
   margin-right: 0.75rem;
   font-style: italic;
-  color: ${(props) => props.theme.colors['base-label']};
+  color: #8D8686;
 `

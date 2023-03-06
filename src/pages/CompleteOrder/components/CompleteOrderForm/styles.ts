@@ -57,7 +57,7 @@ export const PaymentMethodOptionsContainer = styled.div`
   
   > p {
     grid-column: span 3;
-    color: ${({ theme }) => theme.colors["base-error"]};
+    color: #F84747;
   }
 `;
 

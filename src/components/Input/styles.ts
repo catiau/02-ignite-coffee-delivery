@@ -6,7 +6,7 @@ export const InputWrapper = styled.div`
   flex-direction: column;
   gap: 0.3rem;
   position: relative;
-  > p {
+  > span {
     color: ${(props) => props.theme.colors['error']};
     font-size: 0.875rem;
     font-weight: 400;

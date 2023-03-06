@@ -40,7 +40,6 @@ export function AddressForm() {
         placeholder="Complemento"
         className="complement"
         {...register("complement")}
-        error={errors.complement?.message}
         rightText="Opcional"
       />
       <Input

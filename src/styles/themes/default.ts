@@ -8,5 +8,6 @@ export const defaultTheme = {
         'base-white': '#FFFFFF',
         'base-background': '#FAFAFA',
         'yellow':'#DBAC2C',
+        'error': '#F84747'
     }
 }

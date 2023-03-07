@@ -81,10 +81,8 @@ export function CartContextProvider({ children }: CartContextProviderProps){
   
       setCartItems(newCart);
     }
+
   
-
-
-
     function cleanCart(){
       setCartItems([]);
     }

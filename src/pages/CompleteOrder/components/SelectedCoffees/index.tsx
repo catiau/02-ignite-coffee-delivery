@@ -1,7 +1,7 @@
 import { SelectedCoffeesContainer, SelectedCoffeesContent } from "./styles";
 import { useCart } from "../../../../hooks/useCart"
 import { CoffeeCardCart } from "../CoffeeCardCart";
-import { ConfirmationOrder } from "../ConfirmationOrder";
+import { ConfirmationOrder } from "./ConfirmationSection";
 
 export function SelectedCoffees() {
 

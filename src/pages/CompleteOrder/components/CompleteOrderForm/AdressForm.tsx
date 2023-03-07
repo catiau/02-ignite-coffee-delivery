@@ -10,6 +10,8 @@ interface ErrorsType {
   };
 }
 
+
+
 export function AddressForm() {
   const { register, formState } = useFormContext();
 
@@ -19,7 +21,6 @@ export function AddressForm() {
     <AdressFormContainer>
       <Input
         placeholder="CEP"
-        type="number"
         className="cep"
         {...register("cep")}
         error={errors.cep?.message}

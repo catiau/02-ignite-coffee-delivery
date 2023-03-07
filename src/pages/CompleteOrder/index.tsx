@@ -3,9 +3,9 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import * as zod from "zod"
 import { CompleteOrderForm } from "./components/CompleteOrderForm"
 import { CompleteOrderContainer } from "./styles"
-import { SelectedCoffees } from "./components/SelectedCoffes"
 import { useNavigate } from "react-router-dom"
 import { useCart } from "../../hooks/useCart"
+import { SelectedCoffees } from "./components/SelectedCoffees"
 
 
 enum PaymentMethods {
@@ -34,36 +34,36 @@ export type OrderData  = zod.infer<typeof confirmOrderFormValidationSchema>
 type ConfirmOrderFormData = OrderData 
 
 export function CompleteOrder(){
-    const confirmOrderForm = useForm<ConfirmOrderFormData>({
-        resolver: zodResolver(confirmOrderFormValidationSchema),
-        defaultValues: {
-            paymentMethod: undefined,
-          },
-    })
+  const confirmOrderForm = useForm<ConfirmOrderFormData>({
+      resolver: zodResolver(confirmOrderFormValidationSchema),
+      defaultValues: {
+          paymentMethod: undefined,
+        },
+  })
 
-    const { handleSubmit } = confirmOrderForm;
+  const { handleSubmit } = confirmOrderForm;
 
-    const { cleanCart } = useCart()
+  const { cleanCart } = useCart()
 
-    const navigate = useNavigate()
+  const navigate = useNavigate()
 
-    function handleConfirmOrder(data: ConfirmOrderFormData ) {
-        navigate("/order-confirmed", {
-            state: data,
-        })
-        cleanCart()
-    }
+  function handleConfirmOrder(data: ConfirmOrderFormData ) {
+      navigate("/order-confirmed", {
+          state: data,
+      })
+      cleanCart()
+  }
 
-    return (
-        <FormProvider {...confirmOrderForm}>
-            <CompleteOrderContainer 
-                className="container"
-                onSubmit={handleSubmit(handleConfirmOrder)}
-            >
-                <CompleteOrderForm />
-                <SelectedCoffees />
-            </CompleteOrderContainer>
-        </FormProvider>
+  return (
+      <FormProvider {...confirmOrderForm}>
+          <CompleteOrderContainer 
+              className="container"
+              onSubmit={handleSubmit(handleConfirmOrder)}
+          >
+              <CompleteOrderForm  />
+              <SelectedCoffees />
+          </CompleteOrderContainer>
+      </FormProvider>
 
-    )
+  )
 }

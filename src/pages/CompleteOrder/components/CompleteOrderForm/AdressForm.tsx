@@ -53,7 +53,9 @@ export function AddressForm() {
         {...register("city")}
         error={errors.city?.message}
       />
-      <Input placeholder="UF" {...register("uf")} error={errors.uf?.message} />
+      <Input placeholder="UF" 
+      {...register("uf")} 
+      error={errors.uf?.message} />
     </AdressFormContainer>
   );
 }

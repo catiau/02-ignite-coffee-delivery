@@ -64,6 +64,7 @@ export const PaymentMethodOptionsContainer = styled.div`
 export const AdressFormContainer = styled.div`
     margin-top: 2rem;
 
+    width: 100%;
     display: grid;
     grid-template-columns: 12.5rem 17.25rem 3.75rem;
     column-gap: 0.75rem;

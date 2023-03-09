@@ -3,7 +3,8 @@ import { OrderData } from "../CompleteOrder";
 import { ConfirmedOrderContainer, DetailsOrderContainer, DetailsOrderContent, ItemDetails } from "./styles";
 
 import deliveryBrand from "../../assets/delivery.svg"
-import { CurrencyDollarSimple, MapPin, Money, Timer } from "phosphor-react";
+import { CurrencyDollarSimple, MapPin, Timer } from "phosphor-react";
+import { paymentMethods } from "../CompleteOrder/components/CompleteOrderForm/PaymentMethoOptions";
 
 interface LocationType {
     state: OrderData;
@@ -44,7 +45,7 @@ export function OrderConfirmed(){
                         </div>
                         <div>
                             <p>Pagamento na entrega</p>
-                            <p>{}</p>
+                            <p>{paymentMethods[state.paymentMethod].label}</p>
                         </div>
                     </ItemDetails>
                     

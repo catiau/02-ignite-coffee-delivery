@@ -23,16 +23,19 @@ export const HeaderContainer = styled.header`
         gap: 0.75rem;
     }
 
-    nav a {
+    nav a, nav div {
         display: flex;
         align-items: center;
         text-decoration: none;
+        gap: 0.3rem;
         padding: 0.5rem;
         border-radius: 8px;
         position: relative;
+        font-family: 'Roboto', sans-serif;
+        color: #4B2995;
     }
 
-    nav a[title='location'] {
+    nav div {
         background-color: ${(props) => props.theme.colors['purple-light']};
     }
 

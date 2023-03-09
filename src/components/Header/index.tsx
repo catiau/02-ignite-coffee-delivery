@@ -1,10 +1,8 @@
 import coffeeLogo from '../../assets/logo-coffee-delivery.svg'
 
-import locationIcon from '../../assets/location.svg'
-
 import { HeaderContainer } from './styles'
 
-import { ShoppingCart } from 'phosphor-react'
+import { MapPin, ShoppingCart } from 'phosphor-react'
 
 import { NavLink } from 'react-router-dom'
 
@@ -20,10 +18,12 @@ export function Header(){
                     <img src={coffeeLogo} alt="" />
                 </NavLink>
                 <nav>
-                    <NavLink to={'/'} title='location'>
-                        <img src={locationIcon} alt="" />
+                    <div>
+                        <MapPin size={24} color='#8047F8' weight='fill'/>
                         Vitória da Conquista, BA
-                    </NavLink>
+                    </div>
+                        
+                    
                     <NavLink to={'/complete-order'} title='shopping-cart'>
                         {cartQuantity >= 1 && <span>{cartQuantity}</span>}
                         <ShoppingCart weight="fill" size={24}/>

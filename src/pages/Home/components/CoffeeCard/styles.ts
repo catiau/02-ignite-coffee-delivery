@@ -100,4 +100,8 @@ export const ShoppingCartContainer = styled.div`
     border-radius: 6px;
     padding: 0.5rem;
     cursor: pointer;
+
+    &:hover {
+        background: #8047F8;
+    }
 `

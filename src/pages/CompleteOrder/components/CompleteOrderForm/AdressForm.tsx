@@ -37,7 +37,6 @@ export function AddressForm() {
         onChange={handleChange}
       />
       <Input
-        type="number"
         placeholder="Número"
         {...register("number")}
         error={errors.number?.message}

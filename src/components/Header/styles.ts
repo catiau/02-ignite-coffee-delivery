@@ -61,4 +61,8 @@ export const HeaderContainer = styled.header`
         background-color: ${(props) => props.theme.colors['yellow-dark']};
         border-radius: 999px;
     }
+
+    @media (max-width: 48rem) {
+        padding: 2rem;
+    }
 `

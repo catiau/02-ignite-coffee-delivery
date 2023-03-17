@@ -18,6 +18,7 @@ export const BrandingCoffeeContainer = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+
 `
 
 export const BrandingCoffeeContent = styled.div`

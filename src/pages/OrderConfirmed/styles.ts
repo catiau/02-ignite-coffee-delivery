@@ -22,9 +22,13 @@ export const ConfirmedOrderContainer = styled.div`
         }
 
         span {
-            font-size: 1.2rem;
-        }
-  }
+            font-size: 1.1rem;
+        }   
+    }
+
+    @media screen and (min-width: 47rem) and (max-width: 64rem) {
+        padding-inline: 1rem;
+    }
 
 `
 
@@ -68,13 +72,6 @@ export const DetailsOrderContent = styled.div`
     z-index: -1;
     border-radius: 7px 37px 7px 37px;
     background: linear-gradient(102.89deg, #dbac2c 2.61%, #8047f8 98.76%);
-
-
-    @media screen and (max-width: 47rem) {
-        
-        
-    }
-
 
   }
   

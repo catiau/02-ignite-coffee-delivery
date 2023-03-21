@@ -13,6 +13,10 @@ export const CompleteOrderFormContainer = styled.div`
         font-size: 1.2rem;
     }
 
+    @media (min-width: 34rem) {
+        padding-inline: 1rem;
+    }
+
 
 `
 
@@ -28,6 +32,7 @@ export const AdressFormSection = styled.section`
     background-color: #F3F2F2;
 
     border-radius: 6px;
+
 
 
 `
@@ -59,6 +64,7 @@ export const PaymentMethodOptionsContainer = styled.div`
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
   }
+
   
   
   > p {
@@ -80,6 +86,12 @@ export const AdressFormContainer = styled.div`
     @media (max-width: 33rem) {
         display: flex;
         flex-direction: column;
+    }
+
+    @media (min-width: 33rem) and (max-width: 64rem) {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 1rem;
     }
     
     .cep {

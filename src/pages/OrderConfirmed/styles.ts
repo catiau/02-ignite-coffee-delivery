@@ -26,7 +26,7 @@ export const ConfirmedOrderContainer = styled.div`
         }   
     }
 
-    @media screen and (min-width: 47rem) and (max-width: 64rem) {
+    @media screen and (min-width: 47rem) {
         padding-inline: 1rem;
     }
 
@@ -44,8 +44,7 @@ export const DetailsOrderContainer = styled.div`
     width: 100%;
 
     @media screen and (max-width: 47rem) {
-        flex-direction: column;
-        
+        flex-direction: column;   
     }
 
 

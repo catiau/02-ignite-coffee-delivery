@@ -7,7 +7,7 @@ export const CompleteOrderContainer = styled.form`
     justify-content: space-between;
     gap: 2rem;
 
-    @media screen and (max-width: 47rem) {
+    @media (max-width: 64rem) {
         flex-direction: column;
         padding: 1rem;
     }

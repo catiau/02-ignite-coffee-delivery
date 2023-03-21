@@ -6,4 +6,9 @@ export const CompleteOrderContainer = styled.form`
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+
+    @media screen and (max-width: 47rem) {
+        flex-direction: column;
+        padding: 1rem;
+    }
 `

@@ -62,10 +62,8 @@ export const HeaderContainer = styled.header`
         border-radius: 999px;
     }
 
-    /* @media (max-width: 48rem) {
-        .container {
-            flex-direction: column;
-        }
-    } */
+    @media screen and (max-width: 47rem) {
+        padding-inline: 1rem;
+    }
         
 `

@@ -5,13 +5,14 @@ export const CompleteOrderFormContainer = styled.div`
     
     padding-top: 2.5rem;
 
-    width: 40rem;
+    width: 100%;
     
     h4 {
         font-family: 'Baloo 2';
         font-weight: 700;
         font-size: 1.2rem;
     }
+
 
 `
 
@@ -53,6 +54,11 @@ export const PaymentMethodOptionsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.75rem;
+
+  @media (max-width: 34rem) {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
   
   
   > p {
@@ -70,6 +76,11 @@ export const AdressFormContainer = styled.div`
     column-gap: 0.75rem;
     row-gap: 1rem;
     grid-auto-flow: dense;
+
+    @media (max-width: 33rem) {
+        display: flex;
+        flex-direction: column;
+    }
     
     .cep {
         grid-column: span 3;

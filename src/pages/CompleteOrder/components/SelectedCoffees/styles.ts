@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
 export const SelectedCoffeesContainer = styled.div`
-    
-    width: 40rem;
+
+    width: 100%;
 
     padding-top: 2.5rem;
 
@@ -24,8 +24,6 @@ export const SelectedCoffeesContent = styled.div`
     border-radius: 6px 44px;
 
 `
-
-import styled from "styled-components"
 
 export const ConfirmationOrderContainer = styled.div`
     display: flex;

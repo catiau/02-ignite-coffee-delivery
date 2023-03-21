@@ -65,5 +65,9 @@ export const HeaderContainer = styled.header`
     @media screen and (max-width: 47rem) {
         padding-inline: 1rem;
     }
+
+    @media screen and (min-width: 47rem) {
+        padding-inline: 1rem;
+    }
         
 `

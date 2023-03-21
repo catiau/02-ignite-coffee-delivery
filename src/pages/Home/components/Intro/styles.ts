@@ -19,6 +19,10 @@ export const BrandingCoffeeContainer = styled.section`
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 43rem) {
+        height: 64rem;
+    }
+
 `
 
 export const BrandingCoffeeContent = styled.div`
@@ -26,6 +30,7 @@ export const BrandingCoffeeContent = styled.div`
     align-items: center;
     justify-content: space-between;
     gap: 3.5rem;
+
 
     div {
         max-width: 37rem;
@@ -35,16 +40,27 @@ export const BrandingCoffeeContent = styled.div`
         font-size: 20px;
     }
 
+    @media (max-width: 43rem) {
+        display: flex;
+        flex-direction: column;
+    }
+
 
 `
 
 export const AdvantagesContainer = styled.div`
 
-    max-width: 37rem;
+    width: 100%;
     flex-wrap: wrap;
     display: flex;
     align-items: center;
     margin-top: 4.2rem;
+
+    @media (max-width: 43rem) {
+        .item {
+            
+        }
+    }
 
     .item {
         min-width: 17.5rem;

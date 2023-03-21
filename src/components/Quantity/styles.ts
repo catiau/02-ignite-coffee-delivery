@@ -12,17 +12,13 @@ export const QuantityContainer = styled.div`
     padding: 0.75rem 0.5rem;
 
     input {
+        text-align: right;
         background: none;
         border: none;
-        width: 2.1rem;
+        width: 100%;
         color: black;
         outline: none;
-        
-        text-align: right;
-        
     }
-
-
 `
 
 export const IconControl = styled.button.attrs({

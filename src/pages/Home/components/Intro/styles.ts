@@ -56,12 +56,6 @@ export const AdvantagesContainer = styled.div`
     align-items: center;
     margin-top: 4.2rem;
 
-    @media (max-width: 43rem) {
-        .item {
-            
-        }
-    }
-
     .item {
         min-width: 17.5rem;
 

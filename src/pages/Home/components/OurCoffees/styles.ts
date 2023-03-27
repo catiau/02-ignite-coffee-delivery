@@ -8,6 +8,7 @@ export const OurCoffesContainer = styled.main`
     }
 
     padding-top: 2rem;
+    
 `
 
 export const ProductsListContainer = styled.main`
@@ -19,6 +20,11 @@ export const ProductsListContainer = styled.main`
         height: 85rem;
         margin-bottom: 15rem;
         padding-top: 3rem;
+
+        @media screen and (max-width: 47rem) {
+            width: 100%;
+        }
+
 `
 
 export const CoffeCardConteiner = styled.main`
@@ -33,4 +39,9 @@ export const CoffeCardConteiner = styled.main`
 
     background: #F3F2F2;
     border-radius: 6px 36px;
+
+    @media screen and (max-width: 47rem) {
+        width: 100%;
+    }
+    
 `

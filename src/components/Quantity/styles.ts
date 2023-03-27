@@ -15,7 +15,7 @@ export const QuantityContainer = styled.div`
         text-align: right;
         background: none;
         border: none;
-        width: 100%;
+        width: 2rem;
         color: black;
         outline: none;
     }

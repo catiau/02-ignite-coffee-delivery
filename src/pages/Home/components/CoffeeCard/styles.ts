@@ -38,6 +38,12 @@ export const CoffeeCardContentContainer = styled.div`
         padding-top: 0.5rem;
         text-align: center;
     }
+
+    @media screen and (max-width: 47rem) {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+    }
 `
 
 export const CoffeeTag = styled.div`

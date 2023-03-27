@@ -23,6 +23,10 @@ export const BrandingCoffeeContainer = styled.section`
         height: 64rem;
     }
 
+    @media (max-width: 64rem) {
+        height: 64rem;
+    }
+
 `
 
 export const BrandingCoffeeContent = styled.div`
@@ -41,6 +45,11 @@ export const BrandingCoffeeContent = styled.div`
     }
 
     @media (max-width: 43rem) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (max-width: 64rem) {
         display: flex;
         flex-direction: column;
     }

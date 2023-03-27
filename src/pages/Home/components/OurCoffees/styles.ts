@@ -25,6 +25,10 @@ export const ProductsListContainer = styled.main`
             width: 100%;
         }
 
+        @media screen and (max-width: 64rem) {
+            width: 100%;
+        }
+
 `
 
 export const CoffeCardConteiner = styled.main`
@@ -41,6 +45,10 @@ export const CoffeCardConteiner = styled.main`
     border-radius: 6px 36px;
 
     @media screen and (max-width: 47rem) {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 64rem) {
         width: 100%;
     }
     
